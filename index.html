@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #e3e6e6;
+    }
+
+    /* Header */
+    .navbar {
+      background-color: #131921;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff9900;
+    }
+
+    .search-box {
+      flex: 1;
+      display: flex;
+      margin: 0 20px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      outline: none;
+    }
+
+    .search-box button {
+      padding: 8px 15px;
+      background: #febd69;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* Banner */
+    .banner {
+      background: url('https://images.unsplash.com/photo-1587825140708-6d20fc52d2b7?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    /* Products */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: gray;
+    }
+
+    .card button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #febd69;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #131921;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .footer a {
+      color: #ff9900;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Amazon</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search Amazon">
+      <button>Search</button>
+    </div>
+    <div class="nav-links">
+      <a href="#">Sign In</a>
+      <a href="#">Orders</a>
+      <a href="#">Cart</a>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    Welcome to Amazon Clone
+  </div>
+
+  <!-- Products -->
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=500&q=80" alt="Product">
+      <h3>Headphones</h3>
+      <p>$49.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Product">
+      <h3>Speakers</h3>
+      <p>$79.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=500&q=80" alt="Product">
+      <h3>Smartphone</h3>
+      <p>$499.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1580910051074-dabd38b72d1f?auto=format&fit=crop&w=500&q=80" alt="Product">
+      <h3>Laptop</h3>
+      <p>$899.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Amazon Clone | Made with HTML & CSS</p>
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms</a>
+  </div>
+
+</body>
+</html>
